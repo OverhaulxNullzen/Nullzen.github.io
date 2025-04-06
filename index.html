@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nullzen - Control. Exploit. Undetected.</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+    <section class="hero">
+        <div class="hero-content">
+            <h1>NULLZEN</h1>
+            <p>Control. Exploit. Undetected.</p>
+            <a href="https://discord.gg/jSBcSZdMPn" class="cta-button" target="_blank">Join Discord</a>
+        </div>
+    </section>
+
+    <div class="mobile-notice">
+        <p>⚠️ Note: Silent Aim and Aimbot features are not available on mobile devices.</p>
+    </div>
+
+    <section class="modules">
+        <div class="container">
+            <h2>Modules</h2>
+            <div class="search-container">
+                <input type="text" id="moduleSearch" placeholder="Search modules..." />
+            </div>
+            <div class="risk-category">
+                <h3 class="risk-title safe">Safe Features - No Report Risk</h3>
+                <div class="features-grid">
+                    <div class="feature-card" data-description="Prevent idle kicks">
+                        <h3>Anti AFK</h3>
+                    </div>
+                    <div class="feature-card" data-description="Brighten dark areas">
+                        <h3>FullBright</h3>
+                    </div>
+                    <div class="feature-card" data-description="See all chat messages">
+                        <h3>Show Full Chat</h3>
+                    </div>
+                    <div class="feature-card" data-description="See players through walls">
+                        <h3>ESP</h3>
+                    </div>
+                    <div class="feature-card" data-description="Anti moderator tells you if a moderator joins and disables everything to protect your account">
+                        <h3>Anti Mod</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="risk-category">
+                <h3 class="risk-title medium">Mid Risk Features - Small Report Risk</h3>
+                <div class="features-grid">
+                    <div class="feature-card" data-description="Silent aim within a certain FOV (Don't use with Glock, Max 40 FOV, Don't abuse)">
+                        <h3>Silent Aim</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="risk-category">
+                <h3 class="risk-title high">High Risk Features - Very High Report Risk</h3>
+                <div class="features-grid">
+                    <div class="feature-card" data-description="Aimbot in a certain FOV">
+                        <h3>Aimbot</h3>
+                    </div>
+                    <div class="feature-card" data-description="Walk through walls undetected">
+                        <h3>Noclip</h3>
+                    </div>
+                    <div class="feature-card" data-description="Prevents void falls by spawning temporary platforms">
+                        <h3>Anti Void</h3>
+                    </div>
+                    <div class="feature-card" data-description="Adjust movement speed (Range: 0-39, Default: 16)">
+                        <h3>Speed</h3>
+                    </div>
+                    <div class="feature-card" data-description="Control character physics">
+                        <h3>Ragdoll</h3>
+                    </div>
+                    <div class="feature-card" data-description="Quick location warping">
+                        <h3>Teleports</h3>
+                    </div>
+                    <div class="feature-card" data-description="Destroys the whole map">
+                        <h3>Destroy everything.</h3>
+                    </div>
+                    <div class="feature-card" data-description="Quick gear purchases">
+                        <h3>Buy Gear</h3>
+                    </div>
+                    <div class="feature-card" data-description="Larger hit detection area">
+                        <h3>Hitbox Expanders</h3>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="demo">
+        <div class="container">
+            <h2>Demo</h2>
+            <div class="demo-placeholder">
+                Coming Soon
+            </div>
+        </div>
+    </section>
+
+    <div class="developers">
+        <div class="container">
+            <h2>Main Developers</h2>
+            <div class="developers-grid">
+                <div class="developer-card">
+                    <h3 class="developer-name">axleoislost</h3>
+                    <p class="developer-discord">Discord: <span>axleoislost</span></p>
+                </div>
+                <div class="developer-card">
+                    <h3 class="developer-name">scrunchingn</h3>
+                    <p class="developer-discord">Discord: <span>scrunchingn</span></p>
+                </div>
+                <div class="developer-card">
+                    <h3 class="developer-name">urbancheese</h3>
+                    <p class="developer-discord">Discord: <span>_urbancheese</span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="disclaimer">
+        <div class="container">
+            Nullzen is for educational purposes only. We do not condone misuse.
+        </div>
+    </div>
+
+    <!-- Module Details Modal -->
+    <div id="moduleModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 id="modalTitle"></h2>
+            <p id="modalDescription"></p>
+            <div class="modal-details">
+                <div class="detail-item">
+                    <h4>Status</h4>
+                    <p>Active</p>
+                </div>
+                <div class="detail-item">
+                    <h4>Last Updated</h4>
+                    <p>2025-06-04</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
