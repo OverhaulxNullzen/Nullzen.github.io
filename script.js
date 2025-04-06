@@ -1,4 +1,25 @@
+//dropdo
+document.addEventListener('click', function(e) {
+    const question = e.target.closest('.faq-question');
+    if (question) {
+        const faqItem = question.parentElement;
+        faqItem.classList.toggle('active');
+    }
+});
+
 document.addEventListener('DOMContentLoaded', () => {
+    // smoooth scr
+    const navButtons = document.querySelectorAll('.nav-button');
+    navButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            const sectionId = button.getAttribute('data-section');
+            const section = document.querySelector(`.${sectionId}`);
+            if (section) {
+                section.scrollIntoView({ behavior: 'smooth' });
+            }
+        });
+    });
+
     const searchInput = document.getElementById('moduleSearch');
     const featureCards = document.querySelectorAll('.feature-card');
 
