@@ -1,4 +1,4 @@
-//dropdo
+// FAQ
 document.addEventListener('click', function(e) {
     const question = e.target.closest('.faq-question');
     if (question) {
@@ -8,7 +8,32 @@ document.addEventListener('click', function(e) {
 });
 
 document.addEventListener('DOMContentLoaded', () => {
-    // smoooth scr
+    // sec reveal
+    const sections = document.querySelectorAll('.executors, .modules, .developers, .faq');
+    
+    const revealSection = (entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.style.opacity = '1';
+                entry.target.style.transform = 'translateY(0)';
+                observer.unobserve(entry.target); // stop obs once revealed (doesnt work idk why)
+            }
+        });
+    };
+
+    const sectionObserver = new IntersectionObserver(revealSection, {
+        threshold: 0.15,
+        rootMargin: '0px'
+    });
+
+    sections.forEach(section => {
+        section.style.opacity = '0';
+        section.style.transform = 'translateY(30px)';
+        section.style.transition = 'opacity 0.8s ease-out, transform 0.8s ease-out';
+        sectionObserver.observe(section);
+    });
+
+    // smoooth operator
     const navButtons = document.querySelectorAll('.nav-button');
     navButtons.forEach(button => {
         button.addEventListener('click', () => {
